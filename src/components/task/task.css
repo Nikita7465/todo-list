@@ -1,0 +1,196 @@
+.task {
+  color: var(--text-color);
+  font-family: "Caveat";
+  width: 100%;
+  height: max-content;
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.taskTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completedTaskCheckWrap {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.completedTaskCheck {
+  width: 100%;
+  height: 100%;
+}
+
+.taskTitle {
+  font-size: 28px;
+  margin-right: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.taskIconsWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.taskBtn {
+  width: 26px;
+  height: 26px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.taskIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.taskDesc {
+  font-size: 26px;
+}
+
+.taskDesc:not(:empty) {
+  margin-top: 10px;
+}
+
+.taskModalText {
+  font-size: 20px;
+  font-family: "Neucha";
+  text-align: center;
+}
+
+.taskBtnsWrap {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.taskConfirmModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.editTaskModalInputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.editTaskModalLabel {
+  color: var(--text-color);
+  font-size: 18px;
+  font-family: "Neucha";
+  display: flex;
+  flex-direction: column;
+}
+
+.taskValidationText {
+  color: tomato;
+  min-height: 1.375rem;
+}
+
+.editTaskModalInput {
+  color: var(--text-color);
+  font-size: 26px;
+  font-family: "Caveat";
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  resize: none;
+}
+
+.editTaskModalBtnsWrap {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.editTaskModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  width: 100px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.errorModalText {
+  font-size: 20px;
+  font-family: "Neucha";
+}
+
+.errorModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  width: 100px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.editTaskModalInput::-webkit-scrollbar {
+  width: 5px;
+}
+
+.editTaskModalInput::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 5px;
+}
+
+.editTaskModalInput::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .taskTitle {
+    font-size: 26px;
+  }
+
+  .taskDesc {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .task {
+    padding: 10px;
+  }
+  .taskTitle {
+    font-size: 24px;
+  }
+  .taskDesc {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,123 @@
+.auth {
+  min-height: 100dvh;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: "Neucha";
+  text-align: center;
+  user-select: none;
+}
+
+.authContainer {
+  min-width: 18.75rem;
+}
+
+.authTitle {
+  text-align: center;
+}
+
+.authForm {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.validationText {
+  color: tomato;
+  min-height: 1.25rem;
+}
+
+.authInput {
+  color: var(--text-color);
+  font-size: 1.375rem;
+  font-family: "Caveat";
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.125rem solid var(--secondary-color);
+}
+
+.authInput::placeholder {
+  font-family: "Neucha";
+}
+
+.passwordShowLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  max-width: max-content;
+}
+
+.passwordShowCheck {
+  display: none;
+}
+
+.passwordShowCustomCheck {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.125rem solid var(--text-color);
+  border-radius: 0.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.passwordShowCheck:checked + .passwordShowCustomCheck {
+  background: url(src/assets/check.svg) center no-repeat;
+}
+
+.submitBtn {
+  color: var(--text-color);
+  font-size: 1.375rem;
+  font-family: "Neucha";
+  background: var(--secondary-color);
+  max-width: max-content;
+  padding: 0.3125rem 1.25rem;
+  margin: 0.625rem auto;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.regLink {
+  color: var(--text-color);
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.authModalText {
+  font-size: 20px;
+}
+
+.authModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  width: 100px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .authContainer {
+    min-width: 12.5rem;
+  }
+  .authInput {
+    font-size: 1.25rem;
+  }
+}

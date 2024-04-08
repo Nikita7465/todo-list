@@ -1,0 +1,36 @@
+.blackout {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000098;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 35px;
+  aspect-ratio: 1;
+  --g: no-repeat
+    radial-gradient(circle closest-side, var(--secondary-color) 90%, #0000);
+  background: var(--g) 0 0, var(--g) 0 100%, var(--g) 100% 100%;
+  background-size: 40% 40%;
+  animation: loader 0.5s infinite linear;
+}
+
+@keyframes loader {
+  25% {
+    background-position: 100% 0, 0 100%, 100% 100%;
+  }
+  50% {
+    background-position: 100% 0, 0 0, 100% 100%;
+  }
+  75% {
+    background-position: 100% 0, 0 0, 0 100%;
+  }
+  100% {
+    background-position: 100% 100%, 0 0, 0 100%;
+  }
+}

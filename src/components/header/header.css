@@ -1,0 +1,139 @@
+.header {
+  color: var(--text-color);
+  font-family: "Neucha";
+  background: var(--primary-color);
+  padding: 10px 0;
+}
+
+.headerContainer {
+  padding: 0 50px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username {
+  color: var(--text-color);
+  font-size: 26px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toggleTheme {
+  min-width: 20px;
+  min-height: 20px;
+  background: var(--theme-btn-color);
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.closeModalBtn {
+  width: 26px;
+  height: 26px;
+  background: var(--secondary-color);
+  margin-left: auto;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.closeModalBtn::before,
+.closeModalBtn::after {
+  content: "";
+  width: 3px;
+  height: 70%;
+  background: var(--text-color);
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+}
+
+.closeModalBtn::before {
+  transform: rotate(45deg);
+}
+
+.closeModalBtn::after {
+  transform: rotate(135deg);
+}
+
+.closeModalIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.usernameInput {
+  color: var(--text-color);
+  font-size: 26px;
+  font-family: "Caveat";
+  width: 100%;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.headerUserModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  width: 100%;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.headerUserModalBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.headerModalText {
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerBtnsWrap {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.headerConfirmModalBtn {
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Neucha";
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .headerContainer {
+    padding: 0 15px;
+  }
+}
